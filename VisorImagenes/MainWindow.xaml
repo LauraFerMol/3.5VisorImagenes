@@ -1,0 +1,41 @@
+﻿<Window x:Class="VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisorImagenes"
+        mc:Ignorable="d"
+        Title="Visor imagenes" Height="531.108" Width="714.332" Icon="/assets/">
+    <DockPanel MinHeight="280" MinWidth="280" Margin="10,10,10,10">
+        <DockPanel DockPanel.Dock="Bottom" Height="60" Margin="10" Background="LightBlue">
+            <TextBlock VerticalAlignment="Center" DockPanel.Dock="Left" FontSize="20" Margin="5" FontFamily="Rubik">Nº de imágenes: 8</TextBlock>
+            <TextBlock VerticalAlignment="Center" DockPanel.Dock="Right" FontSize="20" Margin="5" FontFamily="Rubik">Diseñado por Laura Fernández</TextBlock>
+        </DockPanel>
+        <TextBlock Text="Visor de imagenes" FontSize="40" FontFamily="Rubik" TextAlignment="Center" DockPanel.Dock="Top"></TextBlock>
+        <DockPanel LastChildFill="False">
+            <StackPanel DockPanel.Dock="Top">
+                <Button Margin="5">Añadir imagen</Button>
+                <Button Margin="5">Eliminar imagen</Button>
+                <Button Margin="5">Eliminar todas</Button>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom">
+                <Button Margin="5">Rotar</Button>
+                <Button Margin="5">Recortar</Button>
+            </StackPanel>
+        </DockPanel>
+
+        <WrapPanel DockPanel.Dock="Left">
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+            <Image Source="assets/episodioIV.jpg" MaxHeight="179" MaxWidth="134" ></Image>
+
+        </WrapPanel>
+
+
+    </DockPanel>
+</Window>
